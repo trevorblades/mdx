@@ -1,17 +1,7 @@
 {
-  "name": "mdx",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next dev"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@mdx-js/loader": "^2.1.2",
     "@next/mdx": "^12.2.0",
@@ -19,7 +9,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "remark-frontmatter": "^4.0.1",
-    "remark-mdx-frontmatter": "^1.1.1",
     "remark-mdx-frontmatter-nextjs": "^1.1.1",
     "remark-mdx-next": "^0.1.1"
   }
