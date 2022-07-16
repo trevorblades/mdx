@@ -1,0 +1,30 @@
+---
+title: hello
+---
+
+export {PageLayout as default} from '../layouts/page';
+import {graphql} from 'gatsby';
+
+export const pageQuery = graphql`
+  query HomePageQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
+
+# {props.data.site.siteMetadata.title}
+
+This is a `{test}`
+
+<article>
+
+```js
+export const foo = () => {
+  return 123;
+};
+```
+
+</article>
