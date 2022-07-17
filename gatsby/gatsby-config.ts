@@ -2,11 +2,10 @@ import { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: 'MDX v2'
-  }, 
+    title: "MDX v2",
+  },
   plugins: [
-    'gatsby-plugin-react-helmet-async',
-    'gatsby-plugin-mdx',
+    "gatsby-plugin-mdx",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -14,7 +13,7 @@ const config: GatsbyConfig = {
         path: `${__dirname}/src/pages`,
       },
     },
-  ]
-}
+  ],
+};
 
 export default config;

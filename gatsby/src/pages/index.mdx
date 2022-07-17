@@ -3,11 +3,32 @@ title: Test
 ---
 
 export { PageLayout as default } from "../layouts/page";
+import { graphql } from "gatsby";
 
 ## Hello world
 
 This is a test.
 
+Site title: {props.data.site.siteMetadata.title}
+
 ```js
 const foo = "bar";
 ```
+
+export const MyComponent = ({ children }) => <section>{children}</section>;
+
+<MyComponent>
+
+`daf`
+
+</MyComponent>
+
+export const pageQuery = graphql`
+  query HomePageQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`;

@@ -1,6 +1,16 @@
 import React from "react";
+import { PageProps } from "gatsby";
 
-export function PageLayout({ children, pageContext }) {
+type PageLayoutContext = {
+  frontmatter: {
+    title: string;
+  };
+};
+
+export function PageLayout({
+  children,
+  pageContext,
+}: PageProps<null, PageLayoutContext>) {
   return (
     <>
       <header>acme co.</header>
