@@ -1,7 +1,9 @@
-module.exports = {
+import { GatsbyConfig } from "gatsby";
+
+const config: GatsbyConfig = {
   siteMetadata: {
     title: 'MDX v2'
-  },
+  }, 
   plugins: [
     'gatsby-plugin-react-helmet-async',
     'gatsby-plugin-mdx',
@@ -14,3 +16,5 @@ module.exports = {
     },
   ]
 }
+
+export default config;

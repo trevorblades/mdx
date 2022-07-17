@@ -1,3 +1,5 @@
+import React from "react";
+
 export function PageLayout({ children, frontmatter }) {
   return (
     <div>
@@ -6,5 +8,5 @@ export function PageLayout({ children, frontmatter }) {
       {children}
       <footer>&copy; {new Date().getFullYear()}</footer>
     </div>
-  )
+  );
 }

@@ -1,4 +1,6 @@
-export function PageLayout({children, pageContext}) {
+import React from "react";
+
+export function PageLayout({ children, pageContext }) {
   return (
     <>
       <header>acme co.</header>
@@ -8,5 +10,5 @@ export function PageLayout({children, pageContext}) {
       </main>
       <footer>&copy; {new Date().getFullYear()}</footer>
     </>
-  )
+  );
 }
