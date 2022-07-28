@@ -1,22 +1,27 @@
-import React from "react";
-import { PageProps } from "gatsby";
+import React, { ReactNode } from "react";
+import { MDXProvider } from "@mdx-js/react";
+import { MyComponent } from "../components/MyComponent";
 
-type PageLayoutContext = {
-  frontmatter: {
-    title: string;
-  };
+const components = {
+  MyComponent,
 };
 
-export function PageLayout({
-  children,
-  pageContext,
-}: PageProps<null, PageLayoutContext>) {
+type PageLayoutProps = {
+  children: ReactNode;
+};
+
+export function PageLayout({ children }: PageLayoutProps) {
   return (
     <>
-      <header>acme co.</header>
+      <header
+        style={{
+          borderBottom: "1px solid black",
+        }}
+      >
+        acme co.
+      </header>
       <main>
-        <h1>{pageContext.frontmatter.title}</h1>
-        {children}
+        <MDXProvider components={components}>{children}</MDXProvider>
       </main>
       <footer>&copy; {new Date().getFullYear()}</footer>
     </>
