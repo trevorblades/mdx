@@ -1,12 +1,16 @@
 ---
-title: Test
+title: Using MDX in Next.js
 ---
+
+export const getStaticProps = () => ({
+  props: {
+    abc: 123,
+  },
+});
 
 export { PageLayout as default } from "../layouts/page";
 
 ## Hello world
-
-This is a test.
 
 ```js
 const foo = "bar";

@@ -3,7 +3,6 @@ import remarkFrontmatter from "remark-frontmatter";
 import { remarkMdxNext } from "remark-mdx-next";
 
 const withMDX = nextMDX({
-  extension: /\.mdx?$/,
   options: {
     remarkPlugins: [
       remarkFrontmatter,
@@ -13,5 +12,5 @@ const withMDX = nextMDX({
 });
 
 export default withMDX({
-  pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
+  pageExtensions: ["mdx"],
 });
